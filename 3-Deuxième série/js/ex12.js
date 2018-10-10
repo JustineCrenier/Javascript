@@ -2,8 +2,6 @@ function conversionTemperature(){
 
 	let unite = prompt('Choisissez une unité en indiquant un des numéros correspondant ci-dessous : \n0. Fin du Programme\n1. De Celsius vers Fahrenheit\n2. De Celsius vers Kelvin\n3. De Fahrenheit vers Celsius\n4. De Fahrenheit vers Kelvin\n5. De Kelvin vers Celsius\n6. De Kelvin vers Fahrenheit');
 
-	
-
 	switch (unite) {
 		case '0':
 			alert('fin du programme, bye !');
