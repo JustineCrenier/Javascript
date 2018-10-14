@@ -26,4 +26,10 @@ input[type="submit"]{
 	background-color: black;
 	color: white;
 	padding: 15px 30px;
+	border:none;
+}
+input[type="submit"]:hover{
+	background-color: white;
+	color: black;
+	transition: all 0.3s ease;
 }

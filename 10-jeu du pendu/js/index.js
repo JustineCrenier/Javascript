@@ -3,7 +3,6 @@ let tab = [];
 let val;
 let flag = 0;
 let input=document.getElementById('lettre');
-
 const submit = document.getElementById('submit');
 
 //Fonction guessLetter
@@ -40,9 +39,3 @@ submit.addEventListener('click', function(val){
 	}
 	// input.setAttribute('value', null);
 });
-
-
-
-
-
-
