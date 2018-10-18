@@ -6,8 +6,6 @@ let j = 0;
 
 //GET A RANDOM NUMBER
 let getJustePrix = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -21,7 +19,7 @@ justePrix = getJustePrix(20,81);
  	}else{
  		if(rep>justePrix){
  			alert(`c'est moins !`);
- 		}else if (Number(rep)<justePrix) {
+ 		}else if (rep<justePrix) {
  			alert(`c'est plus !`);
  		}
  		i++;

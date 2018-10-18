@@ -1,23 +1,23 @@
 let shop = [{
-		title: 'fruits',
+		title: 'Epée',
 		physic: 2,
 		magic: 1,
 		minLevel: 3,
 		available: true,
 	}, {
-		title: 'clothes',
+		title: 'Hache',
 		physic: 0,
 		magic: 1,
 		minLevel: 15,
 		available: false,
 	}, {
-		title: 'games',
+		title: 'Spectre',
 		physic: 6,
 		magic: 1,
 		minLevel: 5,
 		available: true
 	}, {
-		title: 'drinks',
+		title: 'Gems',
 		physic: 0,
 		magic: 1,
 		minLevel: 10,
