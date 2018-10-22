@@ -1,4 +1,4 @@
-var selectElementsStartingWithA = function(array) {
+ var selectElementsStartingWithA = function(array) {
     for(let i=0; i<array.length; i++){
         if(array[i].charAt(0) != "A"){
             array.splice(i,1);
