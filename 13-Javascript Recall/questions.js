@@ -178,11 +178,23 @@ var convertArrayToObject = function(array) {
 }
 
 var getAllLetters = function(array) {
-    let newArray = [];
-    for(let i=0; i<array.length; i++){
-      newArray.concat(array[i].split(''));
+    name = array;
+    let result = [];
+    for (let i = 0; i < name.length; i++){
+	    name[i] = name[i].split("").join("");
+        if(name[i]!=','){
+        	result.push(name[i]);
+        } 
     }
-    return newArray;
+    result.sort();
+    for (let j=0; j<result.length; j++){
+		if(j+1 < result.length){
+			if( result[j] == result[j+1]){
+				result.splice(j,1);
+			}
+		}
+    }
+	return result; 
 }
 
 var swapKeysAndValues = function(object) {
@@ -235,21 +247,24 @@ var getDomainName = function(string) {
 }
 
 var titleize = function(string) {
-    String.prototype.capitalize = function() {
-        return this.charAt(0).toUpperCase() + this.slice(1);
+    function titleize(val) {
+        let test = val.split(' ')
+        let retour = ''
+        retour += test[0].charAt(0).toUpperCase() + test[0].substring(1)+' '
+        for(let i = 1; i < test.length; i++) {
+            if(test[i].length > 3) {
+                if(i != test.length-1)
+                    retour += test[i].charAt(0).toUpperCase() + test[i].substring(1)+' '
+                else
+                    retour += test[i].charAt(0).toUpperCase() + test[i].substring(1)
+            }
+            else
+                retour += test[i]+' '
+        }
+        return retour.replace(/\. [a-z]/i, String.call.bind(retour.toUpperCase))
     }
 
-    String.prototype.titleize = function() {
-        let string_array = this.split(' ');
-        string_array = string_array.map(function(str) {
-            return str.capitalize(); 
-        });
-    
-        return string_array.join(' ');
-    }
-
-    let result = string.titleize();
-    return result;
+    return titleize(string)
 }
 
 var checkForSpecialCharacters = function(string) {
