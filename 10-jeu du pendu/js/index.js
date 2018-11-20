@@ -1,4 +1,4 @@
-const word = ['B','O','N','J','O','U','R',];
+const word = ['B','O','N','J','O','U','R'];
 let tab = [];
 let val;
 let flag = 0;
@@ -26,7 +26,7 @@ let guessLetter = (val) => {
 		alert("Pas de chance ! rentrez une nouvelle lettre");
 	}
 	if(word.length == tab.length){
-		alert("Gagné !")
+		alert("Gagné !");
 	}
 }
 
