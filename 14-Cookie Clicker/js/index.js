@@ -4,7 +4,7 @@ const affichage = document.getElementById('affichage');
 const multiplier = document.getElementById('multiplier');
 const auto = document.getElementById('autoclicker');
 const bonus = document.getElementById('bonus');
-let score = 0;
+let score = 4990;
 let multiplicateur = 1;
 let prix = 50;
 

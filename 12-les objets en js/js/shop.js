@@ -27,7 +27,7 @@ let shop = [{
 
 let afficher = () => {
 	for (let i=0; i<shop.length; i++){
-		let result = "";
+		let result;
 		for(let key in shop[i]){ 
 			result += '\n' + shop[i][key]; // recupere chaque valeur
 		}
